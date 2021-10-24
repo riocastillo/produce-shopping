@@ -1,4 +1,4 @@
-<img src = "produce.png" width = 100%>
+<img src = "produce.gif" width = 100%>
 
 ## Goal
 Create a fullstack App with User authentification. In this app, users can see what are some produce currently in season, and add them to their shopping cart (they can also delete what they add.)

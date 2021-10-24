@@ -1,0 +1,196 @@
+#writing > h1{
+  color: black;
+  font: 55px 'Beth Ellen', cursive;
+  text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.753), 
+  10px -2px 5px rgba(255, 255, 255, 0.267);
+  letter-spacing: 3px;
+
+  /* -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.74); */
+ 
+}
+
+#writing > h2{
+  font: 50px 'Yanone Kaffeesatz', sans-serif;
+  color:black;
+  letter-spacing: 1px;
+}
+
+#writing{
+  width:60%;
+  margin:auto;
+  margin-top:12%;
+  background:rgba(255, 255, 255, 0.582);
+  padding:20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.507);
+
+}
+
+#homePage{
+  border:2px solid black;
+  height:840px;
+  margin:auto;
+  background: url('produce.jpeg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  text-align: center;
+}
+
+
+#logInOrSignUp >a {
+  width:20%;
+  font: 25px 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.308);
+  margin-left:1.5%;
+  border-radius: 8px;
+  color:black;
+  margin-top:2%;
+  margin-bottom:4%;
+
+
+}
+
+.mainPageBtn{
+  color:Red;
+  padding:5px;
+}
+
+#signInForm{
+  background:rgba(255, 255, 255, 0.61);
+  width:50%;
+  margin-top:8%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.507);
+  padding-bottom:20px;
+  padding-top:20px;
+
+}
+
+.signBody{
+  background:url('produce.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color:black;
+}
+
+.signBody h1{
+  font: 50px 'Sedgwick Ave', cursive;
+}
+
+.page-header > h1{
+  font: 55px 'Beth Ellen', cursive;
+  color:black;
+  letter-spacing: 1px;
+  margin-top:0;
+}
+
+.hide{
+  display: none;
+}
+
+.save{
+  background: url('cart.png');
+  height:80px;
+  width:80px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border:none;
+}
+
+.save:hover{
+  transform: scale(1.1);
+}
+.save:active{
+  transform: scale(0.8);
+}
+
+.produceName{
+  font: 50px 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1px;
+  background:red;
+  padding:5px;
+  color:white;
+}
+
+.season{
+  font: 50px 'Yanone Kaffeesatz', sans-serif;
+  background:rgb(204, 255, 0);
+  padding:5px;
+}
+
+.produce{
+  margin-left:-10%;
+}
+
+ul{
+  list-style: none;
+}
+
+.col-sm-6 > h3{
+  font: 40px 'Sedgwick Ave', cursive;
+}
+
+.message{
+  width:43%;
+  height:240px;
+  float:left;
+  margin:3%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.507);
+  margin-bottom:4.5%;
+}
+
+.col-sm-6 > img{
+  width:25%;
+  float:left;
+  margin-top:7%;
+}
+
+.deleteSaved{
+  background: url('trash.png');
+  background-size:40px;
+  background-repeat: no-repeat;
+  height:50px;
+  width:50px;
+  background-position: center;
+  border:none;
+}
+
+#savedTitle{
+  text-align: right;
+}
+
+.savedProduce{
+  text-align: right;
+  width:60%;
+  float:right;
+  margin-top:10%;
+}
+
+.produceSeason{
+  font: 50px 'Yanone Kaffeesatz', sans-serif;
+  background:rgba(4, 11, 111, 0.753);
+  color:white;
+  padding:5px;
+}
+
+.produceItem{
+  border-bottom:6px solid orange;
+}
+
+.savedProduce .produceName{
+  background:orange;
+}
+
+.logout{
+  width:15%;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  background:black;
+  color:white;
+  margin-bottom:2.5%;
+}
+
+.page-header{
+  border-bottom: 7px solid #eee;
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <title>Produce</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Beth+Ellen&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1>Your Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm logout">Logout</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6 hide">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div>
+        </div>
+        <div class="col-sm-6">
+          <h3>Current In Season Fruits & Veg</h3><br>
+          <ul class="produce">
+          <% for(var i=0; i<inRightNow.length; i++) {%>
+            <li class="message">
+              <span class="produceName"><%= inRightNow[i].name %></span><br><br>
+              <span class="season"><%= inRightNow[i].season %></span>
+              <br><br>
+              <button class='save'></span>
+            </li>
+          <% } %>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <!-- <img src="shop.png"> -->
+          <h3 id="savedTitle">Your Saved Fruits & Veg</h3><br>
+          <ul class="savedProduce">
+          <% for(var i=0; i<produce.length; i++) {%>
+            <li class="produceItem">
+              <span class="produceName"><%= produce[i].name %></span>
+              <br><br>
+              <span class="produceSeason"><%= produce[i].season %></span>
+              <br><br>
+              <button class="deleteSaved"></button><br><br>
+            </li>
+          <% } %>
+          </ul>
+        </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
